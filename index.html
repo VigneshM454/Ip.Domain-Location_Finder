@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Address tracker</title>
+ <!---- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />   -->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="mapapi.css">
+  <style>
+    .attribution {
+    font-size: 20px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+  }
+    .attribution a {
+       color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+    <div class="head">
+        <label for="input"><h2 id="h"> IP Address Tracker</h2> </label>
+        <div class="input">
+            <input id="input" placeholder="Search for any IP address or domain" type="text">
+            <div id="arrow">></div>
+        </div>
+    
+    </div>
+  <div class="contain">
+        <div class="cont">
+          <p>IP ADDRESS</p>
+          <h3 id="ip">142.250.72.164</h3>
+        </div>
+        <hr>
+        <div class="cont">
+          <p>LOCATION</p>
+          <h3 id="loc">Los Angeles,California 5368361</h3>
+        </div>
+        <hr>
+        <div class="cont">
+          <p>TIMEZONE</p>
+          <h3 id="time">UTC -07:00</h3>
+        </div>
+        <hr>
+        <div class="cont">
+          <p>ISP</p>
+          <h3 id="isp">Google LLC</h3>
+        </div>
+  </div>
+  <div id="map"></div>
+  <div class="attribution">
+    Coded by <a href="https://github.com/VigneshM454/" target="_blank"> M.Vignesh</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="mapapi.js"></script>
+</body>
+</html>
